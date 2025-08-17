@@ -127,50 +127,21 @@
       <p>Made with ♥ for kittens & Greece · <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages ready</a></p>
     </div>
   </footer>
-<script>
-  (function(w, d, s, u) {
-    // Shim compatible "arguments"
-    w.DocWidget = w.DocWidget || function() {
-      (w.DocWidget.q = w.DocWidget.q || []).push(arguments);
-    };
-
-    var js = d.createElement(s);
-    js.async = true;
-    js.src = u;
-    js.crossOrigin = "anonymous";
-
-    // Lorsque le loader est prêt, on initialise
-    js.onload = function () {
-      // Essayez d'abord le pattern 'init'
-      if (typeof w.DocWidget === 'function') {
-        try {
-          w.DocWidget('init', {
-            apiBaseUrl: "https://api.example.com/docs",
-            productId: "my-product-123",
-            lang: "en",
-            theme: { color: "#1f7ae0", buttonText: "See doc" },
-            position: { corner: "bottom-left", offsetX: 20, offsetY: 20 },
-            panel: { side: "left", width: 420 },
-            auth: { type: "none" }
-          });
-        } catch(e) {
-          // Si la lib attend directement un objet (sans 'init'), fallback :
-          w.DocWidget({
-            apiBaseUrl: "https://api.example.com/docs",
-            productId: "my-product-123",
-            lang: "en",
-            theme: { color: "#1f7ae0", buttonText: "See doc" },
-            position: { corner: "bottom-left", offsetX: 20, offsetY: 20 },
-            panel: { side: "left", width: 420 },
-            auth: { type: "none" }
-          });
-        }
-      }
-    };
-
-    var first = d.getElementsByTagName(s)[0];
-    first.parentNode.insertBefore(js, first);
-  })(window, document, "script", "https://cdn.example.com/doc-widget/v1/loader.js");
-</script>
+  <script>
+    !function(w,d,s,u){w.DocWidget=w.DocWidget||function(){(w.DocWidget.q=w.DocWidget.q||[]).push(arguments)};
+      var js=d.createElement(s);js.async=1;js.src=u;js.crossOrigin="anonymous";
+      var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(js,f);
+    }(window,document,"script","https://doc-slide.lovable.app/public/doc-widget/v1/loader.js");
+    
+    DocWidget('init', {
+      apiBaseUrl: "https://api.example.com/docs",
+      productId: "lovable-demo-123",
+      lang: "en",
+      theme: { color: "#1f7ae0", buttonText: "See docs", buttonBg: "#ffffff", textColor: "#333333" },
+      position: { corner: "bottom-left", offsetX: 20, offsetY: 20 },
+      panel: { side: "left", width: 420, title: "Lovable Documentation" },
+      auth: { type: "none" }
+    });
+  </script>
 </body>
 </html>
