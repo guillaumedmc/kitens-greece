@@ -127,5 +127,21 @@
       <p>Made with ♥ for kittens & Greece · <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages ready</a></p>
     </div>
   </footer>
+  <script>
+    !function(w,d,s,u,i){w.DocWidget=w.DocWidget||function(c){(w.DocWidget.q=w.DocWidget.q||[]).push(c)};
+      var js=d.createElement(s);js.async=1;js.src=u;js.crossOrigin="anonymous";
+      var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(js,f);
+    }(window,document,"script","https://cdn.example.com/doc-widget/v1/loader.js");
+    
+    DocWidget({
+      apiBaseUrl: "https://api.example.com/docs",
+      productId: "my-product-123",
+      lang: "en",
+      theme: { color: "#1f7ae0", buttonText: "See doc" },
+      position: { corner: "bottom-left", offsetX: 20, offsetY: 20 },
+      panel: { side: "left", width: 420 },
+      auth: { type: "none" }
+    });
+  </script>
 </body>
 </html>
