@@ -38,6 +38,15 @@
   </section>
 
   <main class="container">
+    <section id="documentation">
+      <h2>Documentation</h2>
+        <iframe
+          src="https://doc-slide.lovable.app/doc-widget/v1/viewer.html#%7B%22productId%22%3A%22my-product%22%2C%22lang%22%3A%22fr%22%2C%22version%22%3A%22latest%22%7D"
+          style="width:100%;height:600px;border:1px solid #e5e5e5;border-radius:8px;"
+          title="Documentation"
+          loading="lazy"
+        ></iframe>
+      </section>
     <section id="about" class="card">
       <h2>About</h2>
       <p>
@@ -127,21 +136,5 @@
       <p>Made with ♥ for kittens & Greece · <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages ready</a></p>
     </div>
   </footer>
-  <script>
-    !function(w,d,s,u){w.DocWidget=w.DocWidget||function(){(w.DocWidget.q=w.DocWidget.q||[]).push(arguments)};
-      var js=d.createElement(s);js.async=1;js.src=u;js.crossOrigin="anonymous";
-      var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(js,f);
-    }(window,document,"script","https://doc-slide.lovable.app/public/doc-widget/v1/loader.js");
-    
-    DocWidget('init', {
-      apiBaseUrl: "https://api.example.com/docs",
-      productId: "lovable-demo-123",
-      lang: "en",
-      theme: { color: "#1f7ae0", buttonText: "See docs", buttonBg: "#ffffff", textColor: "#333333" },
-      position: { corner: "bottom-left", offsetX: 20, offsetY: 20 },
-      panel: { side: "left", width: 420, title: "Lovable Documentation" },
-      auth: { type: "none" }
-    });
-  </script>
 </body>
 </html>
