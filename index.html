@@ -119,33 +119,23 @@
         <p>If safe to do so, note the location and contact a nearby veterinary clinic for advice.</p>
       </details>
     </section>
-    <script
-      src="https://guidenest.netlify.app/doc-widget/v1/loader.js?v=2025-08-25"
-      data-docwidget-base="https://guidenest.netlify.app/doc-widget/v1/"
-      defer
-    ></script>
-    <script>
-      window.DocWidget = window.DocWidget || function(){ (DocWidget.q = DocWidget.q || []).push(arguments); };
-      DocWidget('init', {
-        productId: 'my-product',
-        lang: 'fr',
-        version: 'latest',
-        theme: { color: '#1f7ae0', buttonText: 'View doc', zIndex: 'max' },
-        position: { corner: 'bottom-right', offsetX: 24, offsetY: 24 },
-        panel: { width: 920, height: 640, closeOnEsc: true, backdrop: true }
-      });
-    </script>
-    <script>
-(function(){
-  var btn=document.createElement('button');
-  btn.id='docwidget-diag';
-  btn.textContent='DIAG DOC';
-  btn.style.cssText='position:fixed;right:24px;bottom:24px;z-index:2147483647;background:#e11d48;color:#fff;border:0;border-radius:999px;padding:10px 14px;box-shadow:0 6px 24px rgba(0,0,0,.2);font:14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;cursor:pointer';
-  btn.onclick=function(){ alert('Bouton DIAG visible 👍'); };
-  function ready(f){ if(document.readyState==='loading'||!document.body){ document.addEventListener('DOMContentLoaded',f,{once:true}); } else f(); }
-  ready(function(){ document.body.appendChild(btn); });
-})();
+<script>
+  window.DocWidget = window.DocWidget || function(){ (DocWidget.q = DocWidget.q || []).push(arguments); };
+  DocWidget('init', {
+    baseUrl: 'https://guidenest.netlify.app/doc-widget/v1/',
+    productId: 'my-product',
+    lang: 'fr',
+    version: 'latest',
+    theme: { color: '#1f7ae0', buttonText: 'View doc', zIndex: 'max' },
+    position: { corner: 'bottom-right', offsetX: 24, offsetY: 24 },
+    panel: { width: 920, height: 640, closeOnEsc: true, backdrop: true }
+  });
 </script>
+<script
+  src="https://guidenest.netlify.app/doc-widget/v1/loader.js"
+  defer
+  data-docwidget-base="https://guidenest.netlify.app/doc-widget/v1/"
+></script>
   </main>
 
   <footer class="site-footer">
