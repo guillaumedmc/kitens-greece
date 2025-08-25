@@ -27,15 +27,6 @@
       </nav>
     </div>
   </header>
-     <section id="documentation">
-      <h2>Documentation</h2>
-        <iframe
-          src="https://doc-slide.lovable.app/doc-widget/v1/viewer.html#%7B%22productId%22%3A%22my-product%22%2C%22lang%22%3A%22fr%22%2C%22version%22%3A%22latest%22%7D"
-          style="width:100%;height:600px;border:1px solid #e5e5e5;border-radius:8px;"
-          title="Documentation"
-          loading="lazy"
-        ></iframe>
-      </section>
   <section class="hero">
     <div class="container hero-inner">
       <h1>Γατάκια &nbsp;in&nbsp; Greece</h1>
@@ -144,6 +135,17 @@
         panel: { width: 920, height: 640, closeOnEsc: true, backdrop: true }
       });
     </script>
+    <script>
+(function(){
+  var btn=document.createElement('button');
+  btn.id='docwidget-diag';
+  btn.textContent='DIAG DOC';
+  btn.style.cssText='position:fixed;right:24px;bottom:24px;z-index:2147483647;background:#e11d48;color:#fff;border:0;border-radius:999px;padding:10px 14px;box-shadow:0 6px 24px rgba(0,0,0,.2);font:14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;cursor:pointer';
+  btn.onclick=function(){ alert('Bouton DIAG visible 👍'); };
+  function ready(f){ if(document.readyState==='loading'||!document.body){ document.addEventListener('DOMContentLoaded',f,{once:true}); } else f(); }
+  ready(function(){ document.body.appendChild(btn); });
+})();
+</script>
   </main>
 
   <footer class="site-footer">
