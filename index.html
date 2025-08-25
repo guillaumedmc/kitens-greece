@@ -129,18 +129,18 @@
       </details>
     </section>
     <script
-  src="https://https://preview--doc-slide.lovable.app/doc-widget/v1/loader.js"
-  defer
+      src="https://preview--doc-slide.lovable.app/doc-widget/v1/loader.js"
+      data-docwidget-base="https://preview--doc-slide.lovable.app/doc-widget/v1/"
+      defer
 ></script>
 <script>
   window.DocWidget = window.DocWidget || function(){ (DocWidget.q = DocWidget.q || []).push(arguments); };
   DocWidget('init', {
+    baseUrl: 'https://preview--doc-slide.lovable.app/doc-widget/v1/',
     productId: 'my-product',
-    lang: 'fr',
-    version: 'latest',
-    theme: { color: '#1f7ae0', buttonText: 'Voir la doc', zIndex: 99999 },
+    theme: { color: '#1f7ae0', buttonText: 'View doc', zIndex: 'max' },
     position: { corner: 'bottom-right', offsetX: 24, offsetY: 24 },
-    panel: { width: 920, height: 640 }
+    panel: { width: 920, height: 640, closeOnEsc: true, backdrop: true }
   });
 </script>
   </main>
