@@ -211,4 +211,12 @@ details[open]{ box-shadow: var(--shadow); }
   color: var(--muted);
 }
 
+#docwidget-btn{
+    position: fixed !important;
+    display: inline-flex !important;
+    z-index: 2147483647 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
 :focus{ outline: 2px solid color-mix(in oklab, var(--accent) 70%, white) ; outline-offset: 2px }
