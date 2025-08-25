@@ -38,15 +38,6 @@
   </section>
 
   <main class="container">
-    <section id="documentation">
-      <h2>Documentation</h2>
-        <iframe
-          src="https://doc-slide.lovable.app/doc-widget/v1/viewer.html#%7B%22productId%22%3A%22my-product%22%2C%22lang%22%3A%22fr%22%2C%22version%22%3A%22latest%22%7D"
-          style="width:100%;height:600px;border:1px solid #e5e5e5;border-radius:8px;"
-          title="Documentation"
-          loading="lazy"
-        ></iframe>
-      </section>
     <section id="about" class="card">
       <h2>About</h2>
       <p>
@@ -129,6 +120,21 @@
         <p>If safe to do so, note the location and contact a nearby veterinary clinic for advice.</p>
       </details>
     </section>
+    <script
+  src="https://https://preview--doc-slide.lovable.app/doc-widget/v1/loader.js"
+  defer
+></script>
+<script>
+  window.DocWidget = window.DocWidget || function(){ (DocWidget.q = DocWidget.q || []).push(arguments); };
+  DocWidget('init', {
+    productId: 'my-product',
+    lang: 'fr',
+    version: 'latest',
+    theme: { color: '#1f7ae0', buttonText: 'Voir la doc', zIndex: 99999 },
+    position: { corner: 'bottom-right', offsetX: 24, offsetY: 24 },
+    panel: { width: 920, height: 640 }
+  });
+</script>
   </main>
 
   <footer class="site-footer">
