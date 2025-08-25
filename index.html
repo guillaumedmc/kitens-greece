@@ -119,10 +119,17 @@
         <p>If safe to do so, note the location and contact a nearby veterinary clinic for advice.</p>
       </details>
     </section>
-<script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Made with ♥ for kittens & Greece · <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages ready</a></p>
+    </div>
+  </footer>
+  <script>
   window.DocWidget = window.DocWidget || function(){ (DocWidget.q = DocWidget.q || []).push(arguments); };
   DocWidget('init', {
-    baseUrl: 'https://guidenest.netlify.app/doc-widget/v1/',
+    baseUrl: 'https://guidenest.netlify.app/doc-widget/v1/',  /* force la base */
     productId: 'my-product',
     lang: 'fr',
     version: 'latest',
@@ -131,17 +138,12 @@
     panel: { width: 920, height: 640, closeOnEsc: true, backdrop: true }
   });
 </script>
+
+<!-- 2) Loader en dernier (defer) -->
 <script
   src="https://guidenest.netlify.app/doc-widget/v1/loader.js"
   defer
-  data-docwidget-base="https://guidenest.netlify.app/doc-widget/v1/"
-></script>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Made with ♥ for kittens & Greece · <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages ready</a></p>
-    </div>
-  </footer>
+  data-docwidget-base="https://guidenest.netlify.app/doc-widget/v1/">
+</script>
 </body>
 </html>
