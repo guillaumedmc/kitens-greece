@@ -120,12 +120,22 @@
       </details>
     </section>
   </main>
-<script
-  src="https://guidenest.netlify.app/doc-widget/v1/loader.js?v=patch6"
-  defer
-  data-docwidget-base="https://guidenest.netlify.app/doc-widget/v1/">
-</script>
+<script>
+!function(w,d){
+  w.DocWidget = w.DocWidget || function(){ (w.DocWidget.q=w.DocWidget.q||[]).push(arguments) };
+  var s=d.createElement('script'); s.async=1; s.crossOrigin='anonymous';
+  s.src='https://guidenest.netlify.app/doc-widget/v1/loader.js';
+  (d.head||d.documentElement).appendChild(s);
 
+  // Optionnel : override par défauts
+  w.DocWidget('init', {
+    base: 'https://guidenest.netlify.app/doc-widget/v1',
+    productId: 'kitens',
+    lang: 'fr',
+    version: 'latest'
+  });
+}(window,document);
+</script>
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Made with ♥ for kittens & Greece · <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages ready</a></p>
