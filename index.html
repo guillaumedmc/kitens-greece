@@ -120,10 +120,15 @@
       </details>
     </section>
   </main>
-  <script src="https://guidenest.netlify.app/doc-widget/v1/loader.js" defer></script>
   <script>
+    !function(w,d,s,u){
+      w.DocWidget = w.DocWidget || function(){ (w.DocWidget.q = w.DocWidget.q || []).push(arguments) };
+      var js = d.createElement(s); js.async = 1; js.src = u; js.crossOrigin = "anonymous";
+      d.head.appendChild(js);
+    }(window,document,'script','https://guidenest.netlify.app/doc-widget/v1/loader.js');
+    
     DocWidget('init', {
-      tenant: 'kitens',
+      tenant: 'acme',   // <-- slug ou patch public.ts pour accepter l'UUID
       lang: 'fr',
       version: 'latest'
     });
